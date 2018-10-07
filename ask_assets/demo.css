@@ -1,0 +1,25 @@
+.margin{
+    margin-top: -50px;
+
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.red{
+    background-color: blue;
+    height: 80%
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('./images/coast.jpg');
+
+    /* Full height */
+    height: 30%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
