@@ -1,5 +1,5 @@
 .margin{
-    margin-top: -50px;
+    /* margin-top: 0px; */
 
     margin-left: -16px;
     margin-right: -16px;
@@ -10,8 +10,30 @@
     height: 10%
 }
 
+.slide{
+    height: 300px;
+    weight: 200px;
+}
+
+pre{
+   background-color: aquamarine;
+       margin-bottom: 0.1rem;
+}
+
 .left{
     float: right;
+}
+
+.heading1{
+margin-top: 50px;
+margin-left: 50px;
+color: aquamarine
+}
+
+.heading2 {
+    margin-top: 30px;
+    margin-left: 50px;
+    color: aquamarine
 }
 
 .logo{
@@ -48,4 +70,67 @@
     
         height: auto;
 
+}
+
+.center{
+    top:50%;
+    left:50%;
+    position: absolute;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+   /* margin: 100px; */
+
+}
+
+.border{
+width: 100%;
+height: auto;
+border: 2px solid red;
+margin: 20px;
+padding: 20px;
+}
+
+.border1 {
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+    margin: 5px;
+}
+
+
+.border2 {
+    width: 100%;
+    height: auto;
+    border: 2px solid red;
+    margin-left: 45px;
+    padding-left: 40px;
+    margin-top:-30px;
+    margin-bottom: 30px;
+}
+.symbol{
+    max-height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 968px) {
+.symbol {
+    /* max-height: 100px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+}
 }

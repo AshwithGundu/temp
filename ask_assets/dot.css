@@ -57,7 +57,7 @@ Main components
 
 -------------------------------- */
 .cd-section {
-    min-height: 60%;
+    min-height: 100%;
     position: relative;
     padding: 2em 0;
 }
@@ -78,7 +78,7 @@ Main components
     color: #bda3ad;
 }
 
-.cd-section h1,
+/* .cd-section h1,
 .cd-section p {
     position: absolute;
     left: 50%;
@@ -93,7 +93,7 @@ Main components
     width: 90%;
     max-width: 768px;
     text-align: center;
-}
+} */
 
 .cd-section h1 {
     color: white;
@@ -104,11 +104,11 @@ Main components
 }
 
 .cd-section p {
-    line-height: 1.6;
+    /* line-height: 1.6; */
 }
 
 @media only screen and (min-width: 768px) {
-    .cd-section h1 {
+    /* .cd-section h1 {
         font-size: 30px;
         font-size: 1.875rem;
     }
@@ -117,7 +117,7 @@ Main components
         font-size: 20px;
         font-size: 1.25rem;
         line-height: 2;
-    }
+    } */
 }
 
 .cd-scroll-down {
