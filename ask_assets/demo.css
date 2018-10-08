@@ -7,19 +7,45 @@
 
 .red{
     background-color: blue;
-    height: 80%
+    height: 10%
+}
+
+.left{
+    float: right;
+}
+
+.logo{
+     width: 40px;
+     height: 40px;
+     padding-top: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     box-sizing: content-box;
+
+}
+
+.pp{
+    
+    margin-top: 30px;
+    height: 400px;
+}
+.photo{
+  
+
 }
 
 .parallax {
     /* The image used */
-    background-image: url('./images/coast.jpg');
+    background-image: url('./images/laptop.jpg');
 
     /* Full height */
-    height: 30%;
-
+    /* height: 70%; */
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+        height: auto;
+
 }
