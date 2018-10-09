@@ -57,7 +57,7 @@ Main components
 
 -------------------------------- */
 .cd-section {
-    min-height: 100%;
+    min-height: 700px;
     position: relative;
     padding: 2em 0;
 }
