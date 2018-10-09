@@ -21,7 +21,7 @@ body {
     font-family: "Ubuntu", sans-serif;
     color: #3e3947;
     background-color: rgb(255, 255, 255);
-           overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body,
@@ -57,10 +57,17 @@ Main components
 
 -------------------------------- */
 .cd-section {
-    min-height: 700px;
+    min-height: 600px;
     position: relative;
     padding: 2em 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .cd-section {
+        min-height: 700px;
+    }
+}
+
 
 .cd-section:nth-of-type(odd) {
     background-color: #3e3947;
@@ -288,6 +295,7 @@ ul {
     margin-bottom: 1rem;
     color: transparent;
 }
+
 .touch #cd-vertical-nav {
     position: fixed;
     z-index: 1;
