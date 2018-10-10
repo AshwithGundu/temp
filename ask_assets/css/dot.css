@@ -70,20 +70,30 @@ Main components
 
 
 .cd-section:nth-of-type(odd) {
-    background-color: #3e3947;
+    background-color: #557A95;
 }
 
 .cd-section:nth-of-type(odd) p {
-    color: #b3ffd9;
+    color: #99CED3;
 }
 
 .cd-section:nth-of-type(even) {
-    background-color: #745360;
+    background-color: #99CED3;
 }
 
 .cd-section:nth-of-type(even) p {
-    color: #bda3ad;
+    color: rgb(47, 68, 83);
 }
+
+.cd-section:nth-of-type(odd) h2 {
+        color: #99CED3;
+}
+
+.cd-section:nth-of-type(even) h2 {
+
+    color: rgb(47, 68, 83);
+}
+
 
 /* .cd-section h1,
 .cd-section p {
@@ -209,8 +219,12 @@ Main components
     top: 8px;
     height: 12px;
     width: 12px;
+    /* border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px; */
     border-radius: 50%;
-    background-color: #d88683;
+    background-color: rgba(67, 77, 85, 0.568);
     -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
     -moz-transition: -moz-transform 0.2s, background-color 0.5s;
     transition: transform 0.2s, background-color 0.5s;
@@ -225,8 +239,10 @@ Main components
     position: relative;
     margin-right: 10px;
     padding: .4em .5em;
+    /* padding-top: 15px; */
     color: white;
     font-size: 14px;
+    font-weight: bold;
     font-size: 0.875rem;
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
     -moz-transition: -moz-transform 0.2s, opacity 0.2s;
