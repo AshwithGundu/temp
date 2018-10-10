@@ -103,6 +103,7 @@ color: aquamarine
     width: 50%;
     margin-top: 30px;
     height: 400px;
+    position: relative;
 }
 
 @media only screen and (max-width: 768px) {
@@ -132,6 +133,9 @@ color: aquamarine
 .pp1{
     height: 200px;
     width: 200px;
+    position: absolute;
+    margin-top: 180px;
+    z-index: 20;
 }
 .photo{
   width: 100%;
@@ -140,7 +144,7 @@ color: aquamarine
 
 .parallax {
     /* The image used */
-    background-image: url('./images/laptop.jpg');
+    background-image: url('../images/laptop.jpg');
 
     /* Full height */
     /* height: 70%; */
@@ -229,7 +233,7 @@ padding: 20px;
 
 .parallax1 {
     /* The image used */
-    background-image: url('./images/map.jpg');
+    background-image: url('../images/map.jpg');
 
     /* Full height */
     /* height: 70%; */
@@ -298,8 +302,6 @@ padding: 20px;
         letter-spacing: 3px;
         text-transform: uppercase;
         color: red;
-        background-color: rgba(31, 29, 27, 0.651);
-        border-radius: 30px
 }
 
 @media only screen and (max-width: 768px) {

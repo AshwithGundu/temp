@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #555;
- 
+
 }
 
 .top-container {
@@ -13,17 +13,16 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .top-container {
+        margin-bottom: 0px;
+        /* width: 115%; */
+        overflow-x: hidden;
 
-.top-container {
-    margin-bottom: 0px;
-
-}
-
-
+    }
 }
 
 .header {
-    padding-left:16px;
+    padding-left: 16px;
     background: #555;
     color: #f1f1f1;
     z-index: 20;
