@@ -208,25 +208,51 @@ padding: 20px;
 .universityName{
     color:white
 }
-.symbol{
-    max-height: 100px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+
+@media only screen and (max-width: 768px) {
+.universityName {
+   font-size: 4vw;
+   text-align: center;
+}
+.borderr {
+    margin: 5px;
+    padding: 0px;
+    color: red;
+}
+.univ_para{
+    text-align: center;
+}
+
 }
 
 
 
 
-@media only screen and (max-width: 968px) {
+.row {
+    margin-right: 0px;
+    margin-left: 10px;
+    padding-left: 5px;
+}
+
+.symbol{
+    max-height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+}
+
+
+
+
+@media only screen and (max-width: 668px) {
 .symbol {
     /* max-height: 100px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }
 }
 
