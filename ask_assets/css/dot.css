@@ -70,7 +70,7 @@ Main components
 
 
 .cd-section:nth-of-type(odd) {
-    background-color: #557A95;
+   background-color: #1b3044;
 }
 
 .cd-section:nth-of-type(odd) p {
@@ -78,11 +78,12 @@ Main components
 }
 
 .cd-section:nth-of-type(even) {
-    background-color: #99CED3;
+    
+     background-color: #629397;
 }
 
 .cd-section:nth-of-type(even) p {
-    color: rgb(47, 68, 83);
+    color: #162838;
 }
 
 .cd-section:nth-of-type(odd) h2 {
@@ -217,13 +218,14 @@ Main components
     position: relative;
     /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
     top: 8px;
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
     /* border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px; */
     border-radius: 50%;
+    border: 2px solid #629397;
     background-color: rgba(67, 77, 85, 0.568);
     -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
     -moz-transition: -moz-transform 0.2s, background-color 0.5s;
