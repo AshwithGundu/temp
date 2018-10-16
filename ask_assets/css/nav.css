@@ -36,7 +36,9 @@ body {
 }
 
 .content {
-    /* padding: 16px; */
+
+    /* overflow-x: hidden; */
+
 
 }
 
