@@ -2,11 +2,9 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
 
 html{
-<<<<<<< HEAD
-     overflow-x: hidden;
-=======
+
     overflow-x: hidden;
->>>>>>> parent of 8f124ae... hidden
+
 }
 *,
 *:after,
