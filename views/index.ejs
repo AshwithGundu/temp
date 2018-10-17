@@ -9,19 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="css/dot.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/demo.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
     <link href="css/type.css" rel="stylesheet">
 
-<link href="css/ti.css" rel="stylesheet">
+    <link href="css/ti.css" rel="stylesheet">
 
 
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
 
-<script src="js/dot/modernizr.js"></script>
+    <script src="js/dot/modernizr.js"></script>
 </head>
 
 <body>
@@ -42,103 +44,52 @@
         </div>
     </div>
 
-    <div class="content margin">
+    <div class="content ">
+<nav class="cd-vertical-nav">
+    <ul>
+        <li><a href="#section1" class="active"><span class="label">Intro</span></a></li>
+        <li><a href="#section2"><span class="label">Education</span></a></li>
+        <li><a href="#section3"><span class="label">Projects</span></a></li>
+        <li><a href="#section4"><span class="label">Contact</span></a></li>
+    </ul>
+</nav><!-- .cd-vertical-nav -->
 
-        <nav class="" id="cd-vertical-nav">
-            <ul>
-                <li>
-                    <a href="#section1" data-number="1">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">Intro</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section2" data-number="2">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">Education</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section3" data-number="3">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">Theatre</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section4" data-number="4">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">Java</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section5" data-number="5">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">TAbleau</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section6" data-number="6">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">MISS</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#section7" data-number="7">
-                        <span class="cd-dot"></span>
-                        <span class="cd-label">Contact</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <a class="cd-nav-trigger cd-img-replace">Open navigation
-            <span></span>
-        </a>
+<button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
 
-        <section id="section2" class="cd-section">
+<section id="section1" class="cd-section">
+<div>
+<% include Sections/education%>
+</div>
+</section><!-- cd-section -->
 
+<section id="section2" class="cd-section">
+<div>
+<% include Sections/theatre%>
+</div>
+</section><!-- cd-section -->
 
-            <% include Sections/education%>
+<section id="section3" class="cd-section">
+    <div>
+<% include Sections/java %>
+    </div>
+</section><!-- cd-section -->
 
-        </section>
-        <!-- cd-section -->
+<section id="section4" class="cd-section">
+<div>
+<% include Sections/tableau %>
+</div>
+</section><!-- cd-section -->
 
-        <section id="section3" class="cd-section">
-            <% include Sections/theatre%>
-        </section>
-        <!-- cd-section -->
-
-        <section id="section4" class="cd-section">
-
-
-            <% include Sections/java %>
-
-        </section>
-        <!-- cd-section -->
-
-        <section id="section5" class="cd-section">
-
-            <% include Sections/tableau %>
-
-        </section>
-        <!-- cd-section -->
-
-        <section id="section6" class="cd-section">
-            <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia
-                earum perferendis,
-                culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id
-                cum.&rdquo;</p>
-        </section>
-        <!-- cd-section -->
-
-        <section id="section7" class="last">
-            <% include Sections/contact %>
-            <!-- end of parallax -->
-            <% include Sections/icons %>
-
-        </section>
+<section id="section5" class="cd-section">
+    <div>
+<% include Sections/contact %>
+<!-- end of parallax -->
+<% include Sections/icons %>
+    </div>
+</section>
 
     </div>
-<script src="ti.js"></script>
+    <script src="ti.js"></script>
     <script src="nav.js"></script>
     <!-- <script src="type.js"></script> -->
     <script src="click.js"></script>
