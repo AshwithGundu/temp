@@ -8,11 +8,12 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/dot.css" rel="stylesheet">
+    <!-- <link href="css/dot.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/demo.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
+    <link href="css/send.css" rel="stylesheet">
     <link href="css/type.css" rel="stylesheet">
 
     <link href="css/ti.css" rel="stylesheet">
@@ -45,58 +46,58 @@
     </div>
 
     <div class="content ">
-<nav class="cd-vertical-nav">
-    <ul>
-        <li><a href="#section1" class="active"><span class="label">Intro</span></a></li>
-        <li><a href="#section2"><span class="label">Education</span></a></li>
-        <li><a href="#section3"><span class="label">Projects</span></a></li>
-        <li><a href="#section4"><span class="label">Contact</span></a></li>
-    </ul>
-</nav><!-- .cd-vertical-nav -->
+        <nav class="cd-vertical-nav">
+            <ul>
+                <li><a href="#section1" class="active"><span class="label">Intro</span></a></li>
+                <li><a href="#section2"><span class="label">Education</span></a></li>
+                <li><a href="#section3"><span class="label">Projects</span></a></li>
+                <li><a href="#section4"><span class="label">Contact</span></a></li>
+            </ul>
+        </nav><!-- .cd-vertical-nav -->
 
-<button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
+        <button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
 
-<section id="section1" class="cd-section">
-<div>
-<% include Sections/education%>
-</div>
-</section><!-- cd-section -->
+        <section id="section1" class="cd-section">
+            <div>
+                <% include Sections/education%>
+            </div>
+        </section><!-- cd-section -->
 
-<section id="section2" class="cd-section">
-<div>
-<% include Sections/theatre%>
-</div>
-</section><!-- cd-section -->
+        <section id="section3" class="cd-section">
+            <div>
+                <% include Sections/theatre%>
+            </div>
+        </section><!-- cd-section -->
 
-<section id="section3" class="cd-section">
-    <div>
-<% include Sections/java %>
-    </div>
-</section><!-- cd-section -->
+        <section id="section3" class="cd-section">
+            <div>
+                <% include Sections/java %>
+            </div>
+        </section><!-- cd-section -->
 
-<section id="section4" class="cd-section">
-<div>
-<% include Sections/tableau %>
-</div>
-</section><!-- cd-section -->
-
-<section id="section5" class="cd-section">
-    <div>
-<% include Sections/contact %>
-<!-- end of parallax -->
-<% include Sections/icons %>
-    </div>
-</section>
+        <section id="section3" class="cd-section">
+            <div>
+                <% include Sections/tableau %>
+            </div>
+        </section><!-- cd-section -->
+        <section id="section4" class="cd-section">
+            <div>
+                <!-- <br> -->
+                <% include Sections/contact %>
+                <!-- end of parallax -->
+                <% include Sections/icons %>
+            </div>
+        </section>
 
     </div>
     <script src="ti.js"></script>
     <script src="nav.js"></script>
     <!-- <script src="type.js"></script> -->
     <script src="click.js"></script>
-    <script src="js/dot/jquery-2.1.1.js"></script>
-    <script src="js/dot/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- <script src="js/dot/jquery-2.1.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="js/dot/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -115,6 +116,33 @@
     $('.carousel').carousel({
         interval: 2000
     })
+
+    function formfunc() {
+        var formData = new FormData(document.querySelector('form'))
+
+        $('#cf').trigger('reset')
+        $.post("/sendmail", {
+                email: formData.get('email'),
+                Message: formData.get('Message')
+            })
+            .done(function () {
+                $('#msg').html('Succesfully Sent')
+                $('.cH').addClass('d-none')
+                $('#cS').removeClass('d-none')
+                // alert("Data Saved: " + msg);
+            })
+            .catch(err => {
+                alert(err)
+            })
+
+        return false;
+    }
+
+    function showform() {
+        $('#msg').html('Fill Details')
+        $('.cH').removeClass('d-none')
+        $('#cS').addClass('d-none')
+    }
 </script>
 
 </html>

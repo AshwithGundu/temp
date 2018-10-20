@@ -2,21 +2,31 @@
     <br>
     <div class="contact">
         <div class="formclass">
-            <form  action="/sendmail" method="post">
+            <form id="cf" onsubmit="return formfunc();">
                 <div class="row d-flex justify-content-around">
                     <div class="col-md-10 m-2">
-                        <h2 class="contact_heading">Fill  Details</h2>
-                       
+                        <h2 class="contact_heading" id="msg">Fill Details</h2>
+
                     </div>
 
-                    <div class="col-md-10 m-2">
+                    <div class="col-md-10 cH m-2">
                         <input class="form-control" name="email" placeholder="E-Mail" type="text">
                     </div>
-                    <div class="col-md-10 m-2">
+                    <div class="col-md-10 cH m-2">
                         <input class="form-control" name="Message" placeholder="Enter Message" type="text">
                     </div>
-                    <div class="col-md-10 m-2">
-                        <input class="btn btn-lg btn-success btn-block" type="submit" id="" value="SEND">
+                    <div class="col-md-10 cH m-2">
+                        <input class="btn btn-lg btn-success btn-block" type="submit" id="cB" value="SEND">
+                        <!-- Start -->
+
+                        <!-- end -->
+                    </div>
+
+                    <div class="col-md-10 d-none m-2" id="cS">
+                        <input class="btn btn-lg btn-success btn-block" type="button" id="cB" value="RESEND" onclick="showform()">
+                        <!-- Start -->
+
+                        <!-- end -->
                     </div>
 
                     <div class="col-md-10 m-2 contact_heading">
@@ -32,5 +42,16 @@
         </div>
 
     </div>
-
+    <br>
+    <div class="white">
+        <% include icons_folder/row1 %>
+        <!-- 2nd row -->
+        <% include icons_folder/row2 %>
+        <!-- third row -->
+        <% include icons_folder/row3 %>
+    </div>
 </div>
+
+<script>
+
+</script>

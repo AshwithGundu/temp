@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
     });
 });
 
+
+
+
 app.post('/sendmail', nodemail.nm);
+
 
 module.exports = app

@@ -447,11 +447,11 @@ Content Sections - basic style
     display: table;
     width: 100%;
     height: 100vh;
-    background: #3a2c41;
+    background: #314455;
 }
 
 .cd-section:nth-of-type(even) {
-    background-color: #70557e;
+    background-color: #4d6d9a;
 }
 
 

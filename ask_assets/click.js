@@ -5,13 +5,17 @@ const s = document.getElementById("ee2");
 //     document.getElementById(a).style.zIndex = "2"
 //     document.getElementById(b).style.zIndex = "-2"
 // }
+f.style.display = "none"
 
 function c2() {
     f.style.zIndex = 1;
     s.style.zIndex = -1;
+    f.style.display = "block"
+    
 }
 
 function c1() {
     f.style.zIndex = -1;
     s.style.zIndex = 1;
 }
+
