@@ -373,12 +373,16 @@ excel_img{
     }
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 368px) {
     .excel_pic {
 
     width: 120%;
-    height: auto;
+    height: 180px;
+
     
+    }
+    .heigh{
+        height: 220px;
     }
 
     
