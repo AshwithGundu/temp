@@ -373,19 +373,16 @@ excel_img{
     }
 }
 
-@media only screen and (max-width: 368px) {
-    .excel_pic {
+@media only screen and (max-width: 558px) {
+.margintop{
+    margin-top: 200px;
+}
+}
 
-    width: 120%;
-    height: 180px;
-
-    
+@media (min-width: 558px) and (max-width: 858px) {
+    .margintop {
+        margin-top: 400px;
     }
-    .heigh{
-        height: 220px;
-    }
-
-    
 }
 
 
@@ -473,7 +470,8 @@ excel_img{
         /* margin: -10px; */
         border: 1px solid white;
         margin-left: -10px;
-        width: 130%;
+         margin-right: -10px;
+        width: 140%;
         height: 130%
     }
     .px-4 {
