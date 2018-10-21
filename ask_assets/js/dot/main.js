@@ -51,7 +51,7 @@ jQuery(document).ready(function ($) {
 		$('body,html').animate({
 				'scrollTop': target.offset().top
 			},
-			300
+			400
 		);
 	}
 });

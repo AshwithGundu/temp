@@ -112,10 +112,11 @@ color: aquamarine
 }
 
 .pp{
-    width: 50%;
+    width: 100%;
     margin-top: 30px;
     height: 400px;
     position: relative;
+        margin-left: -100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -146,7 +147,12 @@ color: aquamarine
     height: 200px;
     width: 200px;
     position: absolute;
+    
     /* z-index: 20; */
+}
+
+.propic{
+    margin: auto;
 }
 .photo{
   width: 100%;
@@ -267,7 +273,7 @@ padding: 20px;
 
 
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 980px) {
 .symbol {
     /* max-height: 100px; */
     display: block;
@@ -326,6 +332,7 @@ padding: 20px;
     
     width: 80%;
     height: auto;
+    cursor: pointer;
     /* border: 4px solid white; */
      
 }
@@ -470,3 +477,8 @@ excel_img{
     }
 }
 
+.contact_bottom{
+    color: red;
+    text-align: center;
+    font-size: 2.5vw;
+}
