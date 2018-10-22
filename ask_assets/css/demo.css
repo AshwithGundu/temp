@@ -1,12 +1,13 @@
 /* Useful stuff and generic styling */
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
 
-html{
+html {
 
 
     overflow-x: hidden;
 
 }
+
 *,
 *:after,
 *:before {
@@ -39,37 +40,38 @@ body {
         font-size: 3vw;
     }
 }
-.margin{
+
+.margin {
     /* margin-top: 0px; */
 
     margin-left: -16px;
     margin-right: -16px;
 }
 
-.red{
+.red {
     background-color: blue;
     height: 10%
 }
 
-.slide{
+.slide {
     /* height: 300px; */
     /* weight: 200px; */
     border: 4px solid white
 }
 
-pre{
-      display: block;
+pre {
+    display: block;
 
 }
 
-.left{
+.left {
     float: right;
 }
 
-.heading1{
-margin-top: 50px;
-margin-left: 50px;
-color: aquamarine
+.heading1 {
+    margin-top: 50px;
+    margin-left: 50px;
+    color: aquamarine
 }
 
 .heading2 {
@@ -78,17 +80,17 @@ color: aquamarine
     color: aquamarine
 }
 
-.logo{
-     width: 40px;
-     height: 40px;
-     padding-top: 10px;
-     padding-left: 10px;
-     padding-right: 10px;
-     box-sizing: content-box;
+.logo {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: content-box;
 
 }
 
-.cmd{
+.cmd {
     width: 90%;
     height: auto;
     /* border: 2px solid red; */
@@ -100,23 +102,23 @@ color: aquamarine
 
 }
 
-.cmd_header{
+.cmd_header {
     height: 7%;
     background-color: #1b3044;
     border-top-right-radius: 50px;
 }
 
-.cmd_body{
-   
-   color: red;
+.cmd_body {
+
+    color: red;
 }
 
-.pp{
+.pp {
     width: 100%;
     margin-top: 30px;
     height: 400px;
     position: relative;
-        margin-left: -100px;
+    margin-left: -100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -125,6 +127,7 @@ color: aquamarine
         margin-top: 30px;
         height: 200px;
     }
+
     .cmd {
         width: 90%;
         height: auto;
@@ -135,6 +138,7 @@ color: aquamarine
         border-bottom-left-radius: 10px;
         margin-left: 20px
     }
+
     .cmd_header {
         height: 7%;
         /* background-color: black; */
@@ -143,20 +147,22 @@ color: aquamarine
 
 
 }
-.pp1{
+
+.pp1 {
     height: 200px;
     width: 200px;
     position: absolute;
-    
+
     /* z-index: 20; */
 }
 
-.propic{
+.propic {
     margin: auto;
 }
-.photo{
-  width: 100%;
-  height: auto;
+
+.photo {
+    width: 100%;
+    height: auto;
 }
 
 .parallax {
@@ -173,9 +179,9 @@ color: aquamarine
 
 }
 
-.center{
-    top:50%;
-    left:50%;
+.center {
+    top: 50%;
+    left: 50%;
     position: absolute;
     bottom: auto;
     right: auto;
@@ -185,16 +191,16 @@ color: aquamarine
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
-   /* margin: 100px; */
+    /* margin: 100px; */
 
 }
 
-.borderr{
-width: 100%;
-height: auto;
-/* border: 2px solid transparent; */
-margin: 20px;
-padding: 20px;
+.borderr {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid transparent; */
+    margin: 20px;
+    padding: 20px;
 }
 
 
@@ -215,7 +221,7 @@ padding: 20px;
     /* margin-top:-40px; */
     margin-bottom: 30px;
     margin-right: 10px;
-    
+
 }
 
 /* .photo_back{
@@ -224,23 +230,25 @@ padding: 20px;
 
 } */
 
-.universityName{
-    color:white
+.universityName {
+    color: white
 }
 
 @media only screen and (max-width: 768px) {
-.universityName {
-   font-size: 4vw;
-   text-align: center;
-}
-.borderr {
-    margin: 5px;
-    padding: 0px;
-    color: red;
-}
-.univ_para{
-    text-align: center;
-}
+    .universityName {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .borderr {
+        margin: 5px;
+        padding: 0px;
+        color: red;
+    }
+
+    .univ_para {
+        text-align: center;
+    }
 
 }
 
@@ -253,16 +261,16 @@ padding: 20px;
     padding-left: 5px;
 }
 
-.symbol{
+.symbol {
     max-height: 200px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        background-color: #a3bbbd;
-        border-radius: 15px;
-        padding: 15px;
-       
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #a3bbbd;
+    border-radius: 15px;
+    padding: 15px;
+
 
 }
 
@@ -274,15 +282,16 @@ padding: 20px;
 
 
 @media only screen and (max-width: 980px) {
-.symbol {
-    /* max-height: 100px; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 100px;
+    .symbol {
+        /* max-height: 100px; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100px;
+        width: 100px;
+    }
 }
-}
+
 @media only screen and (max-width: 1000px) {
 
     .photo {
@@ -328,43 +337,43 @@ padding: 20px;
 
 }
 
-.excel_pic{
-    
+.excel_pic {
+
     width: 80%;
     height: auto;
     cursor: pointer;
     /* border: 4px solid white; */
-     
+
 }
 
-excel_img{
-     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-     0 10px 10px rgba(0, 0, 0, 0.22);
+excel_img {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.excel_pic:hover{
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-      -10px 15px 20px rgba(0, 0, 0, 0.22);
+
+.excel_pic:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        -10px 15px 20px rgba(0, 0, 0, 0.22);
 }
 
 
-.e1{
+.e1 {
     position: relative;
-    
+
 }
 
-.e2{
+.e2 {
     position: absolute;
     /* margin-top: -38%;
     margin-left: 10%; */
     top: 0%;
     left: 0%
-
 }
 
 @media only screen and (max-width: 1068px) {
-.photo{
-    height: 30%;
-}
+    .photo {
+        height: 30%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -374,9 +383,9 @@ excel_img{
 }
 
 @media only screen and (max-width: 558px) {
-.margintop{
-    margin-top: 200px;
-}
+    .margintop {
+        margin-top: 200px;
+    }
 }
 
 @media (min-width: 558px) and (max-width: 858px) {
@@ -389,101 +398,106 @@ excel_img{
 
 
 
-.contact{
+.contact {
 
     height: 90%;
     width: 600px;
     background-color: rgba(0, 0, 0, 0.205);
-   
-    margin:auto;
+
+    margin: auto;
     border-radius: 50px;
     vertical-align: middle;
 }
 
 
 @media only screen and (max-width: 968px) {
-.contact {
+    .contact {
 
-    width: auto;
-    margin: 0px 30px 0 30px;
-}
-}
-
-.formclass{
-    margin:auto;
+        width: auto;
+        margin: 0px 30px 0 30px;
+    }
 }
 
-.border3{
+.formclass {
+    margin: auto;
+}
+
+.border3 {
 
     /* width:auto; */
-        height: 90px;
+    height: 90px;
     /* border: 2px solid red;  */
     padding: 10px 20px 10px 15px;
 }
 
 @media only screen and (max-width: 968px) {
-.border3 {
+    .border3 {
 
-    width: auto;
-    height: 50px;
+        width: auto;
+        height: 50px;
+    }
+
 }
 
-}
-
-.white{
+.white {
     background-color: rgba(255, 255, 255, 0);
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
-.contact_heading{
+.contact_heading {
     text-align: center;
-        font-size: 20px;
-        font-size: 1.25rem;
-        /* font-weight: 900; */
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: rgba(51, 23, 153, 0.74);
+    font-size: 20px;
+    font-size: 1.25rem;
+    /* font-weight: 900; */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(51, 23, 153, 0.74);
 }
 
 @media only screen and (max-width: 768px) {
     .white {
-        display:none
+        display: none
     }
 }
 
-.tableauPic
-{
+.tableauPic {
     width: 100%;
     height: auto;
     border: 4px solid white;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
-        padding: 40px;
-        background-color: rgb(58, 211, 91)
+    padding: 40px;
+    background-color: rgb(58, 211, 91)
 }
 
 
 @media only screen and (max-width: 650px) {
     .tableauPic {
-        padding:2px;
+        padding: 2px;
         /* margin: -10px; */
         border: 1px solid white;
         margin-left: -10px;
-         margin-right: -10px;
-        width: 140%;
+        margin-right: -10px;
+        width: 120%;
         height: 130%
     }
+
     .px-4 {
         padding: 0px;
         height: 100px;
     }
-    .pl-5{
-        padding:-10px;
+
+    .pl-5 {
+        padding: -10px;
+    }
+
+    .mar {
+        margin: -100px;
     }
 }
 
-.contact_bottom{
+.contact_bottom {
     color: red;
     text-align: center;
     font-size: 2.5vw;
