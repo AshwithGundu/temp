@@ -49,12 +49,10 @@ body {
 }
 
 .sticky+.content {
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
-@media only screen and (max-height: 468px) {
-.sticky+.content {
-     padding-top: 1px; 
-}
+@media only screen and (max-height: 568px) {
+
 
 }

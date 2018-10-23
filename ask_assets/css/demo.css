@@ -98,7 +98,7 @@ pre {
     background-color: rgba(85, 122, 149, 0.295);
     border-top-right-radius: 50px;
     border-bottom-left-radius: 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 
 }
 
@@ -533,4 +533,19 @@ excel_img {
     background-attachment: fixed;
     z-index: -11;
     /* margin-left: 50px; */
+}
+
+.matter{
+    color: white;
+    /* letter-spacing: 2px; */
+font-family: 'Fahkwang',
+sans-serif;
+font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+ .matter {
+     font-size: 13px;
+
+ }
 }

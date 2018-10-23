@@ -451,7 +451,7 @@ Content Sections - basic style
 }
 
 .cd-section:nth-of-type(even) {
-    background-color: rgb(4, 5, 14);
+    background-color: rgba(0, 1, 7, 0.938);
 }
 
 
