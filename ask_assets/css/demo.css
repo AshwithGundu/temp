@@ -339,12 +339,26 @@ pre {
 
 .excel_pic {
 
-    width: 80%;
-    height: auto;
+    
+  width: 80%;
+  height: auto;
+  
     cursor: pointer;
     /* border: 4px solid white; */
 
 }
+
+@media only screen and (max-width: 950px) {
+.excel_pic {
+
+    width: 50%;
+    /* height: 300px; */
+    /* border: 4px solid white; */
+
+}
+}
+
+
 
 excel_img {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
@@ -359,6 +373,12 @@ excel_img {
 
 .e1 {
     position: relative;
+    /* vertical-align: middle; */
+    /* border: 4px solid white; */
+    /* margin-top: 100px; */
+    /* padding: auto; */
+    z-index: -10;
+
 
 }
 
@@ -367,7 +387,8 @@ excel_img {
     /* margin-top: -38%;
     margin-left: 10%; */
     top: 0%;
-    left: 0%
+    left: 0%;
+
 }
 
 @media only screen and (max-width: 1068px) {
@@ -383,19 +404,8 @@ excel_img {
 }
 
 @media only screen and (max-width: 558px) {
-    .margintop {
-        margin-top: 200px;
-    }
+ 
 }
-
-@media (min-width: 558px) and (max-width: 858px) {
-    .margintop {
-        margin-top: 400px;
-    }
-}
-
-
-
 
 
 .contact {
@@ -501,4 +511,14 @@ excel_img {
     color: red;
     text-align: center;
     font-size: 2.5vw;
+}
+
+#a1 {
+    background-image: url("../images/a2.png");
+    width: 100%;
+    height: 200px;
+    border: 2px solid transparent;
+    background-attachment: fixed;
+    z-index: -11;
+    /* margin-left: 50px; */
 }
