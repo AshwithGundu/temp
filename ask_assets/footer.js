@@ -2,19 +2,17 @@ window.onscroll = function () {
     my()
 };
 
-var sign = document.getElementById("sign");
-var si = document.getElementById("sign_inside");
-var fdd = document.getElementById("fdd");
-var stick = fdd.offsetTop;
+let sign = document.getElementById("sign");
+let si = document.getElementById("sign_inside");
+let fdd = document.getElementById("fdd");
+let stick = fdd.offsetTop;
+let status = true
 
 function my() {
-    if (window.pageYOffset > stick) {
+    if (window.pageYOffset > stick && status) {
         // sign.innerHTML="gundu";
-        sign.appendChild(si)
-    } 
-    // else {
-    //     header.classList.remove("sticky");
-    //     header.classList.add("heading");
-    //     header.style.display = "none";
-    // }
+        sign.appendChild(si);
+        status = false;
+    }
+
 }

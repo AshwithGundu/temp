@@ -244,6 +244,11 @@ pre{
     color: white
 }
 
+  .univ_para {
+      text-align: left;
+      color: rgba(182, 182, 182, 0.897);
+  }
+
 @media only screen and (max-width: 768px) {
     .universityName {
         font-size: 4vw;
