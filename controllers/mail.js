@@ -21,8 +21,8 @@ let nm = (req, res) => {
         // setup email data with unicode symbols
         let mailOptions = {
             from: '"GUNDU" <g.ashwith@gmail.com>', // sender address
-            to: 'g.ashwith@gmail.com', // list of receivers
-            subject: 'Hello ✔', // Subject line
+            to: 'ashwithgundu@gmail.com', // list of receivers
+            subject: 'JOB MAIL GUNDU ✔', // Subject line
             text: 'Hello world?', // plain text body
             html: output // html body
         };
