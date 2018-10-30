@@ -52,7 +52,7 @@ path {
 .line2 {
     stroke-dasharray: 4000;
     /*   stroke-dashoffset: 1000; */
-    animation: w2 6s linear reverse;
+    animation: w2 7s linear reverse;
 }
 
 @keyframes w2 {

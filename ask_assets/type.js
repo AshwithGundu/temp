@@ -1,7 +1,7 @@
 // set up text to print, each item in array is new line
 var aText = new Array("Name : Ashwith Gundu",
     "Phone : +1(660)-528-0658",
-    "Email_ID : ashwithgundu@gmail.com",
+    "Email : ashwithgundu@gmail.com",
     " <br>"
 );
 var iSpeed = 50; // time delay of print out
